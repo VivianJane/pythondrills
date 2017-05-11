@@ -1,0 +1,10 @@
+def sortThis(items):
+
+    for i in range(len(items) - 1):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j+1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+    print items
+
+sortThis([67, 45, 2, 13, 1, 998])
+sortThis([89, 23, 33, 45, 10, 12, 45, 45, 45])
